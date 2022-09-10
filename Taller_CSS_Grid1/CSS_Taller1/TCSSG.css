@@ -1,0 +1,105 @@
+.header {
+    grid-area: header;
+
+}
+
+.main {
+    grid-area: main;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.page {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu menu main main main .'
+        'footer footer footer footer footer .';
+    background-color: #f3d5d594;
+    gap: 10px;
+}
+
+.page .header {
+    border: none;
+    width: 100%;
+    background-size: cover;
+    position: center center;
+    display: inline-block;
+    font-family: 'Ms Madi', cursive;
+    font-size: 4em;
+    color: #232e7a;
+}
+
+.header .logo1 img {
+    float: left;
+    margin: 1em;
+
+}
+
+.header .avatar img {
+    float: right;
+    margin: 1em;
+
+}
+
+.page .menu {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.page .menu .nav_bar ul ol {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 0.3em;
+}
+.page .menu .nav_bar ul ol :hover{
+
+}
+
+.page .main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    border: #232e7a;
+}
+
+.page .main div {
+    padding: 4em;
+}
+
+.page .main .item1 {
+    grid-column: 1/4;
+
+}
+
+.page .main .item10 {
+    grid-column: 4;
+    grid-row: 3/span 5;
+
+}
+.page .main .item14{
+    grid-column: 1/3;
+
+}
+
+.page .footer_grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    margin-bottom: 3em;
+}
+
+.page .footer_grid div img{
+    width: 12em;
+    height: auto;
+    justify-content: center;
+    gap: 0.5em;
+}
+
